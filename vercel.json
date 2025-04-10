@@ -1,0 +1,10 @@
+{
+    "builds": [{
+        "src": "apae_frequency/wsgi.py",
+        "use": "@vercel/python"
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "apae_frequency/wsgi.py"
+    }]
+}
